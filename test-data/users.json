@@ -1,0 +1,94 @@
+{
+  "loginTestCases": [
+    {
+      "testId": "TC_LOGIN_001",
+      "description": "Valid admin credentials",
+      "username": "Admin",
+      "password": "admin123",
+      "expectedResult": "valid",
+      "expectedUrl": "/web/index.php/dashboard/index",
+      "expectedMessage": ""
+    },
+    {
+      "testId": "TC_LOGIN_002",
+      "description": "Invalid username with valid password",
+      "username": "InvalidUser",
+      "password": "admin123",
+      "expectedResult": "invalid",
+      "expectedUrl": "/web/index.php/auth/login",
+      "expectedMessage": "Invalid credentials"
+    },
+    {
+      "testId": "TC_LOGIN_003",
+      "description": "Valid username with invalid password",
+      "username": "Admin",
+      "password": "wrongpassword",
+      "expectedResult": "invalid",
+      "expectedUrl": "/web/index.php/auth/login",
+      "expectedMessage": "Invalid credentials"
+    },
+    {
+      "testId": "TC_LOGIN_004",
+      "description": "Empty username and password",
+      "username": "",
+      "password": "",
+      "expectedResult": "invalid",
+      "expectedUrl": "/web/index.php/auth/login",
+      "expectedMessage": "Required"
+    },
+    {
+      "testId": "TC_LOGIN_005",
+      "description": "Empty username with valid password",
+      "username": "",
+      "password": "admin123",
+      "expectedResult": "invalid",
+      "expectedUrl": "/web/index.php/auth/login",
+      "expectedMessage": "Required"
+    },
+    {
+      "testId": "TC_LOGIN_006",
+      "description": "Valid username with empty password",
+      "username": "Admin",
+      "password": "",
+      "expectedResult": "invalid",
+      "expectedUrl": "/web/index.php/auth/login",
+      "expectedMessage": "Required"
+    },
+    {
+      "testId": "TC_LOGIN_007",
+      "description": "SQL injection attempt in username",
+      "username": "' OR '1'='1",
+      "password": "admin123",
+      "expectedResult": "invalid",
+      "expectedUrl": "/web/index.php/auth/login",
+      "expectedMessage": "Invalid credentials"
+    },
+    {
+      "testId": "TC_LOGIN_008",
+      "description": "Special characters in password",
+      "username": "Admin",
+      "password": "@#$%^&*()",
+      "expectedResult": "invalid",
+      "expectedUrl": "/web/index.php/auth/login",
+      "expectedMessage": "Invalid credentials"
+    },
+    {
+      "testId": "TC_LOGIN_009",
+      "description": "Case sensitive username check",
+      "username": "admin",
+      "password": "admin123",
+      "expectedResult": "invalid",
+      "expectedUrl": "/web/index.php/auth/login",
+      "expectedMessage": "Invalid credentials"
+    },
+    {
+      "testId": "TC_LOGIN_010",
+      "description": "Leading/trailing spaces in username",
+      "username": " Admin ",
+      "password": "admin123",
+      "expectedResult": "invalid",
+      "expectedUrl": "/web/index.php/auth/login",
+      "expectedMessage": "Invalid credentials"
+    }
+  ]
+}

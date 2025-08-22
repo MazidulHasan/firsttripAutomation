@@ -1,0 +1,11 @@
+{
+  "from": "Chattogram",
+  "to": "Dhaka",
+  "departureDate": "23 September, 2025",
+  "adults": 2,
+  "class": "Economy / Premium Economy",
+  "airlines": {
+    "usBangla": "US Bangla Airlines",
+    "novoAir": "Novoair"
+  }
+}

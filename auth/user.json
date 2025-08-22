@@ -1,0 +1,59 @@
+{
+  "validUsers": [
+    {
+      "email": "john.doe@example.com",
+      "password": "SecurePass123!",
+      "firstName": "John",
+      "lastName": "Doe",
+      "role": "user"
+    },
+    {
+      "email": "jane.smith@example.com",
+      "password": "AnotherPass456!",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "role": "admin"
+    },
+    {
+      "email": "bob.wilson@example.com",
+      "password": "TestPass789!",
+      "firstName": "Bob",
+      "lastName": "Wilson",
+      "role": "user"
+    }
+  ],
+  "invalidUsers": [
+    {
+      "email": "invalid-email",
+      "password": "pass",
+      "description": "Invalid email format"
+    },
+    {
+      "email": "test@example.com",
+      "password": "123",
+      "description": "Password too short"
+    },
+    {
+      "email": "",
+      "password": "",
+      "description": "Empty credentials"
+    }
+  ],
+  "testAccounts": {
+    "standard": {
+      "email": "standard@test.com",
+      "password": "Standard123!",
+      "permissions": ["read", "write"]
+    },
+    "premium": {
+      "email": "premium@test.com",
+      "password": "Premium123!",
+      "permissions": ["read", "write", "delete", "admin"]
+    },
+    "readonly": {
+      "email": "readonly@test.com",
+      "password": "ReadOnly123!",
+      "permissions": ["read"]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "users": {
+    "newUser": {
+      "name": "John Doe",
+      "username": "johndoe",
+      "email": "john@example.com"
+    },
+    "updateUser": {
+      "name": "Jane Smith",
+      "username": "janesmith",
+      "email": "jane@example.com"
+    }
+  },
+  "posts": {
+    "newPost": {
+      "title": "Test Post Title",
+      "body": "This is a test post body content",
+      "userId": 1
+    },
+    "updatePost": {
+      "title": "Updated Post Title",
+      "body": "This is an updated post body content",
+      "userId": 1
+    }
+  },
+  "comments": {
+    "newComment": {
+      "name": "Test Comment",
+      "email": "test@example.com",
+      "body": "This is a test comment"
+    }
+  }
+}

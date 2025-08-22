@@ -1,0 +1,38 @@
+{
+  "name": "playwrighttaskassessment_wsd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:flightSearch": "npx playwright test tests/e2e/login.spec.js --project=chromium",
+    "test:flightSearch_report": "npx playwright test tests/e2e/login_data_driven.spec.js && npx playwright show-report --project=chromium",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "report": "npx playwright show-report",
+    "clean": "rm -rf test-results playwright-report"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "e2e",
+    "javascript"
+  ],
+  "author": "Mazidul",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0",
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.1",
+    "eslint": "^9.33.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2"
+  }
+}

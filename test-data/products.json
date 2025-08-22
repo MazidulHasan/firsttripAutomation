@@ -1,0 +1,57 @@
+{
+  "products": [
+    {
+      "id": "prod-001",
+      "name": "Laptop Pro 15",
+      "category": "Electronics",
+      "price": 1299.99,
+      "stock": 45,
+      "description": "High-performance laptop with 15-inch display",
+      "features": ["16GB RAM", "512GB SSD", "Intel i7"],
+      "images": ["laptop-1.jpg", "laptop-2.jpg"]
+    },
+    {
+      "id": "prod-002",
+      "name": "Wireless Mouse",
+      "category": "Accessories",
+      "price": 29.99,
+      "stock": 150,
+      "description": "Ergonomic wireless mouse with precision tracking",
+      "features": ["Bluetooth 5.0", "Rechargeable", "6 buttons"],
+      "images": ["mouse-1.jpg"]
+    },
+    {
+      "id": "prod-003",
+      "name": "USB-C Hub",
+      "category": "Accessories",
+      "price": 49.99,
+      "stock": 75,
+      "description": "7-in-1 USB-C hub for connectivity",
+      "features": ["HDMI", "3x USB 3.0", "SD Card", "Ethernet"],
+      "images": ["hub-1.jpg", "hub-2.jpg"]
+    }
+  ],
+  "categories": [
+    "Electronics",
+    "Accessories",
+    "Software",
+    "Books",
+    "Furniture"
+  ],
+  "testOrders": [
+    {
+      "orderId": "ORD-001",
+      "products": ["prod-001", "prod-002"],
+      "quantities": [1, 2],
+      "total": 1359.97,
+      "status": "pending"
+    },
+    {
+      "orderId": "ORD-002",
+      "products": ["prod-003"],
+      "quantities": [3],
+      "total": 149.97,
+      "status": "shipped"
+    }
+  ]
+}
